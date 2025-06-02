@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="c:\Users\USER\Pictures\Screenshots\emmanuel.jpg" alt="David Emmanuel Enenche" id="profile-img">
+        <h1>Hello, I'm David Emmanuel! 24/13723</h1>
+        <p>Passionate about web development and creating engaging experiences.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi There! Welcome to my page!. My name is Emmanuel, I'm 16 years old and I'm a Computer science student passionate about technology, creativity and building impacting solutions. I enjoy exploring new innovation in software development and aim to make the world better through code.</p>
+        </section>
+
+        <section id="multimedia-showcase">
+            <h2>Multimedia Showcase</h2>
+            <h3>My Audio Greeting:</h3>
+            <audio controls>
+                <source src="media/VOICENOTE.MP3.unknown" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <h3>A Quick Project Video:</h3>
+            <video controls width="320" height="240">
+                <source src="media/FREE Web Design Course (2020)_ Introduction to Web Design _ Episode 1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="interactive-skills">
+            <h2>My Skills</h2>
+            <div class="skill-buttons">
+                <button class="skill-btn" data-skill="HTML">HTML</button>
+                <button class="skill-btn" data-skill="CSS">CSS</button>
+                <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+            </div>
+            <p id="skill-description">Click a skill to learn more!</p>
+        </section>
+<!-- Projects Section -->
+        <section class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8 dark-mode-transition">
+            <h2 class="text-3xl font-bold mb-6 text-blue-600 dark:text-blue-400 flex items-center">
+                <i class="fas fa-laptop-code mr-3"></i>My Projects
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-container">
+                <!-- Projects will be loaded here by JavaScript -->
+            </div>
+            
+            <div class="text-center mt-8">
+                <button id="load-more" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition">
+                    <i class="fas fa-plus-circle mr-2"></i>Load More Projects
+                </button>
+            </div>
+        </section>  
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> David Emmanuel. All rights reserved.</p>
+        <button id="themeToggle">Toggle Dark Mode</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
